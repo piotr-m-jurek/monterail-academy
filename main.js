@@ -1,9 +1,20 @@
 import Vue from 'vue'
-import Element from 'element-ui'
-import App from './App'
-import 'element-ui/lib/theme-chalk/index.css'
+import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.css'
 
-Vue.use(Element)
+import App from './components/App'
+
+Vue.use(VueMaterial)
+
+// Vue.material.registerTheme({
+//   default: {
+//     primary: {
+//       color: 'light-green',
+//       hue: 700
+//     },
+//     accent: 'red'
+//   }
+// })
 
 new Vue({
   el: '#app',

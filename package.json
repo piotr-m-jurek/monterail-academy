@@ -8,6 +8,6 @@
     "dev": "vue build main.js"
   },
   "dependencies": {
-    "element-ui": "^2.0.1"
+    "vue-material": "^0.8.1"
   }
 }
