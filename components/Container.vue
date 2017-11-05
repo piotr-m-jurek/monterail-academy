@@ -1,13 +1,14 @@
 <template>
-  <md-layout md-align="center">
-    <md-layout class="container" md-column>
+  <div layout="column center">
+    <div flex class="container">
       <slot/>
-    </md-layout>
-  </md-layout>
+    </div>
+  </div>
 </template>
 
 <style>
   .container {
+    width: 100%;
     max-width: 900px;
   }
 </style>

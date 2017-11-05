@@ -1,5 +1,5 @@
 <template>
-  <transition name="slide-in">
+  <transition name="slide-in" mode="out-in">
     <router-view></router-view>
   </transition>
 </template>
@@ -15,10 +15,21 @@
     overflow-x: hidden;
   }
 
-  .slide-in-enter-active, .slide-leave-active {
-    transition: 0.5s ease;
+  .slide-in-enter-active {
+    transition: all 0.2s ease-out;
   }
-  .slide-in-enter, .slide-in-leave-to {
+
+  .slide-in-leave-active {
+    transition: all 0.2s ease-in;
+  }
+
+  .slide-in-enter {
     opacity: 0;
+    transform: translateX(50px);
+  }
+
+  .slide-in-leave-to  {
+    opacity: 0;
+    transform: translateX(-50px);
   }
 </style>

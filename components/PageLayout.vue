@@ -1,16 +1,17 @@
 <template>
-  <md-layout md-column md-gutter="8">
-    <md-layout md-column>
-      <md-toolbar class="md-title" md-flex="1">
-        <container>
-          <slot name="header"/>
-        </container>
-      </md-toolbar>
-    </md-layout>
+<el-container>
+  <el-header>
+    <container>
+      <slot name="header"/>
+    </container>
+  </el-header>
+  <el-main>
     <container>
       <slot name="content"/>
     </container>
-  </md-layout>
+  </el-main>
+</el-container>
+  
 </template>
 
 <script>

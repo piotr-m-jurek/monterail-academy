@@ -8,6 +8,7 @@
     "dev": "vue build main.js"
   },
   "dependencies": {
+    "element-ui": "^2.0.3",
     "vue-material": "https://github.com/piotr-m-jurek/vue-material.git",
     "vue-radial-progress": "^0.2.10",
     "vue-router": "^3.0.1"

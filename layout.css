@@ -1,0 +1,31 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+[layout~=row] {
+  display: flex;
+  flex-direction: row;
+}
+
+[layout~=column] {
+  display: flex;
+  flex-direction: column;
+}
+
+[flex] {
+  flex: 1;
+}
+
+[layout~=center] { 
+  align-items: center;
+}
+
+[layout~=column][layout~=gutter] > * + * { 
+  margin-top: 10px;
+}
+
+[layout~=row][layout~=gutter] > * + * { 
+  margin-left: 10px;
+}
