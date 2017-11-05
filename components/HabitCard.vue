@@ -1,6 +1,6 @@
 <template>
     <md-whiteframe
-      md-elevation="3"
+      md-elevation="4"
       class="habit-card"
       md-column
     >
