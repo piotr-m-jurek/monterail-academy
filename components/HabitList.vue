@@ -48,16 +48,6 @@ export default {
 
 
 <style>  
-  /* .list-movement-leave,
-  .list-movement-move {
-    transition: transform 300ms ease;
-    transform: scale(1);
-  }
-
-  .list-movement-leave-active {
-    transform: scale(0);
-  } */
-
 .list-movement-item {
   display: inline-block;
   margin-right: 10px;
