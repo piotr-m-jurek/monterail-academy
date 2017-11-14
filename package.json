@@ -5,7 +5,7 @@
   "author": "Piotr Małecki-Jurek <piotr.m.jurek@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "vue build main.js"
+    "dev": "vue build index.js"
   },
   "dependencies": {
     "element-ui": "^2.0.3",

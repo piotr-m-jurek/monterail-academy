@@ -47,7 +47,9 @@ export default {
 </script>
 
 
-<style>  
+<style>
+.main-title {
+}
 .list-movement-item {
   display: inline-block;
   margin-right: 10px;

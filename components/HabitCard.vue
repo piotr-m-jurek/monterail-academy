@@ -15,10 +15,11 @@
         <div
           v-for="(day, key) in weekDays"
           :key="key"
+          class="checkbox"
         >
           <el-checkbox
             :label="day"
-          >{{''}}</el-checkbox>
+          >{{day}}</el-checkbox>
         </div>
       </el-checkbox-group>
       <router-link :to="{name: 'Edit', params: {id: habit.id}}">
@@ -44,7 +45,7 @@ export default {
   },
   data () {
     return {
-      weekDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+      weekDays: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
     }
   },
   computed: {
@@ -64,5 +65,8 @@ export default {
 <style scoped>
   .habit-card {
     border-radius: 3px;
+  }
+  .checkbox + .checkbox {
+    padding-left: 16px;
   }
 </style>
